@@ -1,4 +1,4 @@
-# 🌐 Personal Portfolio Website
+# Personal Portfolio Website
 
 A responsive personal portfolio website built using HTML, CSS, and JavaScript.  
 The website presents my background, projects, achievements, and contact information in a clean and modern layout.
@@ -19,9 +19,9 @@ The website presents my background, projects, achievements, and contact informat
 
 ### Dynamic Greeting Message
 - Displays greeting based on time of day:
-  - Good Morning ☀️
-  - Good Afternoon 🌤️
-  - Good Evening 🌙
+  - Good Morning 
+  - Good Afternoon 
+  - Good Evening
 - Automatically generated using JavaScript Date object
 
 ### Structured Sections
