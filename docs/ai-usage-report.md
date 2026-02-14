@@ -1,4 +1,4 @@
-1. Purpose of AI Usage
+# Purpose of AI Usage
 
 AI tools were used as a learning assistant to:
 
@@ -10,8 +10,8 @@ AI tools were used as a learning assistant to:
 
 The AI was not used to automatically generate the entire project. Instead, it was used as a guided development assistant.
 
-2. How AI Was Utilized
-2.1 Debugging and Error Resolution
+# How AI Was Utilized
+### Debugging and Error Resolution
 
 AI helped identify and resolve:
 -Incorrect script placement inside the <body>
@@ -21,7 +21,7 @@ AI helped identify and resolve:
 
 For example, when the theme toggle did not work, AI helped diagnose that the <script> tag was placed before the DOM elements were loaded.
 
-2.2 Feature Implementation Guidance
+### Feature Implementation Guidance
 
 AI provided structured guidance for implementing:
 - Dark/Light Theme Toggle using class toggling
@@ -31,7 +31,7 @@ AI provided structured guidance for implementing:
 
 All features were implemented manually after understanding the explanation.
 
-2.3 Documentation Support
+### Documentation Support
 
 I wrote all of the project documentation myself. AI was used only to improve the grammar, sentence flow, and readability of the text, not to generate content or ideas.
 
