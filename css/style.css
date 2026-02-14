@@ -1,0 +1,197 @@
+/* ---------------- Header ---------------- */
+.headerBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 60px;
+    width: 100%;
+    background-color: rgb(106, 195, 213);
+    border-bottom: 4px solid rgb(4, 46, 54);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.headerBar p {
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    margin: 0;
+}
+
+.headerBar nav a {
+    margin-left: 15px;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    text-decoration: none;
+    color: black;
+}
+
+.headerBar nav a:hover {
+    color: crimson;
+}
+
+/* ---------------- Sections ---------------- */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+section h1,
+section h2 {
+    font-size: clamp(2rem, 5vw, 4rem);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Section row content (Projects, Achievements, Contact) */
+.sectionContent {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    width: 90%;
+    flex-wrap: wrap; /* Wrap cards on smaller screens */
+    box-sizing: border-box;
+}
+
+.sectionContent .card {
+    flex: 1 1 250px;
+    border: 2px solid black;
+    border-radius: 1vh;
+    padding: 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+/* Images inside cards */
+.sectionContent .card img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* ---------------- About Me Card ---------------- */
+.aboutMeCard {
+    display: flex;
+    flex-direction: row; /* image left, text right */
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+    border: 2px solid black;
+    border-radius: 1em;
+    box-sizing: border-box;
+}
+
+.aboutMeCard img {
+    width: 30vh;
+    height: 30vh;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+.aboutMeCard p {
+    flex: 1;
+    min-width: 200px;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    margin: 0;
+    text-align: justify;
+}
+
+/* ---------------- Footer ---------------- */
+.footerBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(106, 195, 213);
+    border-top: 4px solid rgb(4, 46, 54);
+    gap: 10px;
+}
+
+.footerBar a {
+    text-decoration: none;
+    color: black;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+}
+
+.footerBar a:hover {
+    color: crimson;
+}
+
+/* ---------------- Dark Mode ---------------- */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+body.dark-mode .headerBar,
+body.dark-mode .footerBar {
+    background-color: #1f1f1f;
+    border-color: #333;
+}
+
+body.dark-mode .sectionContent .card,
+body.dark-mode .aboutMeCard {
+    background-color: #1e1e1e;
+    border-color: #444;
+}
+
+body.dark-mode a {
+    color: white;
+}
+
+body.dark-mode a:hover {
+    color: #ff4d4d;
+}
+
+#themeToggle {
+    margin-left: 20px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* ---------------- Mobile Responsiveness ---------------- */
+@media (max-width: 768px) {
+    .aboutMeCard {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .aboutMeCard img {
+        width: 50vw;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .headerBar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .headerBar nav a {
+        margin: 5px;
+    }
+
+    .footerBar {
+        font-size: 0.9rem;
+    }
+}

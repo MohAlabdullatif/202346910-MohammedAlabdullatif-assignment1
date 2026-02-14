@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Moe Website</title>
+</head>
+
+<body style="margin: 0; scroll-behavior: smooth;">
+
+    <!-- Header -->
+    <header class="headerBar">
+        <p>Moe Website</p>
+        <p id="greeting"></p>
+        <nav>
+            <a href="#aboutMe" class="headerItems">About Me</a>
+            <a href="#projects" class="headerItems">Projects</a>
+            <a href="#achievements" class="headerItems">Achievements</a>
+            <a href="#contact" class="headerItems">Contact Me</a>
+        </nav>
+        <button id="themeToggle">Dark Mode</button>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="aboutMe">
+        <h1>About Me</h1>
+        <div class="aboutMeCard">
+            <img src="assets/Me.jpg" alt="Profile Image">
+            <p>
+                Adaptable Software Engineer with expertise in Python, AI, Data Analysis, and Machine Learning.
+                Experienced in structured problem-solving, research, and clear communication with clients and stakeholders,
+                translating complex insights into actionable, data-driven solutions that drive system improvement and business growth.
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="sectionContent">
+            <div class="card">
+                <h3>Text Sentiment Analysis</h3>
+                <p>
+                    This project applies machine learning–based sentiment analysis to Twitter data by transforming raw tweets
+                    into numerical features and training several classifiers to predict sentiment labels.
+                    Text is first cleaned and converted into vectors using Bag‑of‑Words and TF‑IDF.
+                    Four algorithms are trained: Linear SVC, Complement Naive Bayes, Multinomial Naive Bayes, and Logistic Regression.
+                    The experiments show performance depends on both the vectorizer and the classifier.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Exploratory Analysis of Flight Itineraries and Airfare Patterns</h3>
+                <p>
+                    Analyzed a large flight-pricing dataset with 670,000+ records, examining route characteristics, base fares, 
+                    segment durations, distances, and categorical fields like airlines, airports, and cabins. 
+                    Computed descriptive statistics, distributions, and correlations to understand pricing patterns and itinerary structures.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements">
+        <h2>Achievements</h2>
+        <div class="sectionContent">
+            <div class="card">
+                <img src="assets/phys.jpg" alt="Physics Ceremony">
+                <p>Recognized twice as an A+ student at the physics ceremony, demonstrating consistent outstanding performance in physics.</p>
+            </div>
+            <div class="card">
+                <img src="assets/edad.jpg" alt="Edad Program">
+                <p>Completed the Edad program by McKinsey & Company, gaining structured training in data analysis, problem-solving, and professional skills.</p>
+            </div>
+            <div class="card">
+                <img src="assets/CalcAward.jpg" alt="Calculus Award">
+                <p>Received a Calculus Award as one of the top ten students in the course with a perfect score of 100%.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="sectionContent">
+            <div class="card"><strong>Email: Mohamadalabdullatif2005@gmail.com</strong></div>
+            <div class="card"><strong>Phone: +966 568454698</strong></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footerBar">
+        <a href="#aboutMe">About Me</a> |
+        <a href="#projects">Projects</a> |
+        <a href="#achievements">Achievements</a> |
+        <a href="#contact">Contact Me</a> |
+        <a href="https://www.linkedin.com/in/mohammed-alabdullatif-725a52281" target="_blank">LinkedIn</a>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>
