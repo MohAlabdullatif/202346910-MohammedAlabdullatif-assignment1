@@ -43,7 +43,7 @@ The website presents my background, projects, achievements, and contact informat
 - CSS
 - JavaScript
 
-
+## Project Structure
 ```plaintext
 project/
 │
