@@ -1,16 +1,16 @@
 Technical Documentation – Moe Website Portfolio
 1. Project Overview
 
-Moe Website is a personal portfolio website designed to showcase my skills, projects, achievements, and contact information.
+Moe Website is a personal portfolio designed to showcase my skills, projects, achievements, and contact information.
 The website is fully responsive, includes dark/light mode functionality, and provides a personalized greeting based on the time of day.
 
 Key Features:
 
-Responsive multi-section layout (About Me, Projects, Achievements, Contact)
+Responsive multi-section layout: About Me, Projects, Achievements, Contact
 
 Dark/Light theme toggle
 
-Greeting message based on user’s local time
+Dynamic greeting message based on user’s local time
 
 Structured, readable, and accessible design
 
@@ -21,7 +21,7 @@ project-root/
 │
 ├─ index.html           # Main HTML page
 ├─ css/
-│   └─ style.css        # All styling including dark mode and responsive design
+│   └─ style.css        # Styling, dark mode, and responsive design
 ├─ js/
 │   └─ script.js        # JavaScript for theme toggle and greeting message
 └─ assets/
@@ -32,47 +32,47 @@ project-root/
 
 3. Technologies Used
 
-HTML5 – Page structure and semantic elements
+HTML5 – Semantic page structure
 
-CSS3 – Styling, Flexbox layout, responsive design, and dark mode
+CSS3 – Flexbox layout, responsive design, dark mode styling
 
-JavaScript (ES6) – Dynamic greeting messages and theme toggle functionality
+JavaScript (ES6) – Dynamic greeting messages and theme toggle
 
 4. Design and Layout
 4.1 Header
 
-Sticky header with site title, navigation links, greeting message, and theme toggle button.
+Sticky header containing the site title, navigation links, greeting message, and theme toggle button
 
-Navigation links scroll smoothly to the respective sections.
+Navigation links scroll smoothly to the respective sections
 
 4.2 Sections
 
-About Me: Displays profile picture and a brief bio.
+About Me: Profile picture and brief bio
 
-Projects: Highlights two main projects with descriptions and relevant details.
+Projects: Highlights two main projects with descriptions
 
-Achievements: Shows three key achievements with images and descriptions.
+Achievements: Three key achievements with images and descriptions
 
-Contact: Displays email and phone number.
+Contact: Displays email and phone number
 
 4.3 Footer
 
-Links to all sections plus LinkedIn profile.
+Links to all sections and LinkedIn profile
 
-Consistent design with header.
+Design consistent with the header
 
 4.4 Dark/Light Mode
 
-Toggle button switches between dark and light themes.
+Toggle button switches between dark and light themes
 
-Uses a CSS class (dark-mode) to update background colors, text colors, and card styles dynamically.
+Implements a dark-mode CSS class on <body> to dynamically update background, text, and card styles
 
 5. JavaScript Functionality
 5.1 Greeting Message
 
-Uses the Date object to get the current hour.
+Uses the Date object to obtain the current hour
 
-Displays:
+Displays a greeting based on the hour:
 
 "Good Morning!" for hours 0–11
 
@@ -80,42 +80,42 @@ Displays:
 
 "Good Evening!" for hours 18–23
 
-Injects the greeting into the #greeting element on page load (DOMContentLoaded).
+Injects the greeting into the #greeting element on page load (DOMContentLoaded)
 
 5.2 Theme Toggle
 
-Button with id="themeToggle" toggles dark-mode on the <body> element.
+Button with id="themeToggle" toggles the dark-mode class on <body>
 
-Updates button text to indicate the current mode: "Dark Mode" or "Light Mode".
+Updates button text to indicate the current mode: "Dark Mode" or "Light Mode"
 
-All styles for dark mode are defined in css/style.css under the body.dark-mode selector.
+All dark mode styles are defined in css/style.css under body.dark-mode
 
 6. CSS Styling
 
-Flexbox used for layout and alignment.
+Flexbox is used for layout and alignment
 
-Responsive design: Media queries adjust layout for screens ≤768px.
+Responsive design: Media queries adjust layout for screens ≤768px
 
-Cards: Each section uses .card elements for content, with borders, padding, and rounded corners.
+Cards: Each section uses .card elements with borders, padding, and rounded corners
 
-Dark mode: Changes background colors, text colors, and link colors for better accessibility at night.
+Dark mode: Updates background, text, and link colors for improved accessibility
 
 7. Development Notes
 
-Clean code principles: Proper indentation, organized files, semantic HTML elements.
+Clean code principles: Proper indentation, organized files, semantic HTML elements
 
-Comments: Key sections in CSS and JS are commented for clarity.
+Comments: Key sections in CSS and JavaScript are commented for clarity
 
-Accessibility: Navigation links, proper headings, and alt text for all images.
+Accessibility: Proper headings, navigation links, and alt text for all images
 
-Testing: Verified layout, dark/light mode, and greeting message across desktop and mobile devices.
+Testing: Verified layout, dark/light mode, and greeting message across desktop and mobile devices
 
 8. Future Improvements
 
-Add a portfolio projects gallery with images and links.
+Add a portfolio projects gallery with images and links
 
-Include interactive skill charts or graphs.
+Include interactive skill charts or graphs
 
-Add contact form with validation and email functionality.
+Add a contact form with validation and email functionality
 
-Enhance SEO and accessibility further.
+Further enhance SEO and accessibility
