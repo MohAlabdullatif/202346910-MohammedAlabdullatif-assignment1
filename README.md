@@ -44,8 +44,7 @@ The website presents my background, projects, achievements, and contact informat
 - JavaScript
 
 
-## Project Structure
-
+```plaintext
 project/
 │
 ├── index.html
@@ -58,7 +57,7 @@ project/
 ├── phys.jpg
 ├── edad.jpg
 └── CalcAward.jpg
-
+```
 
 
 
