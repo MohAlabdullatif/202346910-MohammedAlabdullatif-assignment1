@@ -1,12 +1,12 @@
-Technical Documentation -- Moe Website Portfolio
+# Technical Documentation -- Moe Website Portfolio
 
-1\. Project Overview
+## Project Overview
 
 Moe Website is a personal portfolio designed to showcase my skills, projects, achievements, and contact information.
 
 The website is fully responsive, includes dark/light mode functionality, and provides a personalized greeting based on the time of day.
 
-Key Features:
+#### Key Features:
 
 Responsive multi-section layout: About Me, Projects, Achievements, Contact
 
@@ -18,33 +18,24 @@ Structured, readable, and accessible design
 
 Clean and well-commented HTML, CSS, and JavaScript code
 
-2\. File Structure
+#### File Structure
 
-project-root/
-
+```plaintext
+project/
 │
+├── index.html
+├── css/
+│ └── style.css
+├── js/
+│ └── script.js
+└── assets/
+├── Me.jpg
+├── phys.jpg
+├── edad.jpg
+└── CalcAward.jpg
+```
 
-├─ index.html           # Main HTML page
-
-├─ css/
-
-│   └─ style.css        # Styling, dark mode, and responsive design
-
-├─ js/
-
-│   └─ script.js        # JavaScript for theme toggle and greeting message
-
-└─ assets/
-
-    ├─ Me.jpg           # Profile image
-
-    ├─ phys.jpg         # Achievement image: Physics
-
-    ├─ edad.jpg         # Achievement image: Edad Program
-
-    └─ CalcAward.jpg    # Achievement image: Calculus Award
-
-3\. Technologies Used
+#### Technologies Used
 
 HTML5 -- Semantic page structure
 
@@ -52,15 +43,15 @@ CSS3 -- Flexbox layout, responsive design, dark mode styling
 
 JavaScript (ES6) -- Dynamic greeting messages and theme toggle
 
-4\. Design and Layout
+#### Design and Layout
 
-4.1 Header
+##### Header
 
 Sticky header containing the site title, navigation links, greeting message, and theme toggle button
 
 Navigation links scroll smoothly to the respective sections
 
-4.2 Sections
+ ##### Sections
 
 About Me: Profile picture and brief bio
 
@@ -70,21 +61,21 @@ Achievements: Three key achievements with images and descriptions
 
 Contact: Displays email and phone number
 
-4.3 Footer
+##### Footer
 
 Links to all sections and LinkedIn profile
 
 Design consistent with the header
 
-4.4 Dark/Light Mode
+##### Dark/Light Mode
 
 Toggle button switches between dark and light themes
 
 Implements a dark-mode CSS class on <body> to dynamically update background, text, and card styles
 
-5\. JavaScript Functionality
+#### JavaScript Functionality
 
-5.1 Greeting Message
+##### Greeting Message
 
 Uses the Date object to obtain the current hour
 
@@ -98,7 +89,7 @@ Displays a greeting based on the hour:
 
 Injects the greeting into the #greeting element on page load (DOMContentLoaded)
 
-5.2 Theme Toggle
+##### Theme Toggle
 
 Button with id="themeToggle" toggles the dark-mode class on <body>
 
@@ -106,7 +97,7 @@ Updates button text to indicate the current mode: "Dark Mode" or "Light Mode"
 
 All dark mode styles are defined in css/style.css under body.dark-mode
 
-6\. CSS Styling
+#### CSS Styling
 
 Flexbox is used for layout and alignment
 
@@ -116,7 +107,7 @@ Cards: Each section uses .card elements with borders, padding, and rounded corne
 
 Dark mode: Updates background, text, and link colors for improved accessibility
 
-7\. Development Notes
+#### Development Notes
 
 Clean code principles: Proper indentation, organized files, semantic HTML elements
 
@@ -126,7 +117,7 @@ Accessibility: Proper headings, navigation links, and alt text for all images
 
 Testing: Verified layout, dark/light mode, and greeting message across desktop and mobile devices
 
-8\. Future Improvements
+#### Future Improvements
 
 Add a portfolio projects gallery with images and links
 
